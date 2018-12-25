@@ -1,0 +1,11 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+<br/>
+<ul class="box">
+    <h1 style="display: block" class="title has-text-centered">{{title}}</h1>
+    {% for post in posts %}
+        <li class="box"><a href="/posts/details/{{post.id}}">{{post.title}}</a></li>
+    {%endfor%}
+</ul>
+{% endblock %}
