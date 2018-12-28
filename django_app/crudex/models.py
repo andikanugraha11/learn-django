@@ -2,7 +2,7 @@ from django.db import models
 from datetime import datetime
 
 # Create your models here.
-class Crudex(models.Model):
+class Product(models.Model):
     product = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=9, decimal_places=2)

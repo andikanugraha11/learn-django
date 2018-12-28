@@ -1,6 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Crudex
+from .models import Product
 
-admin.site.register(Crudex)
+admin.site.register(Product)
