@@ -20,7 +20,7 @@ class Api_exampleViewSet(viewsets.ModelViewSet):
     serializer_class = Api_exampleSerializer
 
     @action(methods=['GET'], detail=False)
-    def newest(self,request):
+    def newesti(self,request):
         newest = self.get_queryset().order_by('created').last()
         serializer = self.get_serializer_class()(newest)
         return Response(serializer.data)

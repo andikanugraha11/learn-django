@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'model_example_app',
     'posts',
     'crudex',
     'api_example',
